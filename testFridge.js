@@ -39,7 +39,7 @@
 
     console.log('8: open link');
 
-    await page.goto('https://market.yandex.ru/catalog--kholodilniki/71639/list?    hid=15450081&onstock=1&lr=21630&local-offers-first=0');
+    await page.goto('https://market.yandex.ru/catalog--kholodilniki/71639/list?hid=15450081&onstock=1&lr=21630&local-offers-first=0');
 
  
    
@@ -59,7 +59,7 @@
      await page.waitForSelector(' #search-prepack > div > div:nth-child(3)');
 
        console.log('wait for: ЖДЕМ!');
-       const text = await page.$eval('#search-prepack > div > div:nth-child(3)' , element =>                element.textContent); 
+       const text = await page.$eval('#search-prepack > div > div:nth-child(3)' , element =>element.textContent); 
       
      
        await page.screenshot({path: 'testFrifge.png'});
